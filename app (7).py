@@ -1,6 +1,8 @@
 
 import streamlit as st
-st.image("logo.png", width=120)  # Adjust width as needed
+
+st.image("banner.png", use_column_width=True)  # ✅ This is your new banner
+
 
 st.set_page_config(page_title="SkillWise NextGen Recommender", layout="wide")
 
