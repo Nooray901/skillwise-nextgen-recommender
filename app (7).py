@@ -39,3 +39,13 @@ if selected_course:
     st.markdown("### 🔍 Why these courses?")
     st.markdown("* These are selected based on the skills you've built so far.")
     st.markdown("* They align with your progress and open new opportunities.")
+    st.markdown("### 📊 Your Skill Progress")
+    acquired_skills = course_data[selected_course]["skills"]
+    
+    skill_progress = {}
+    for skill in acquired_skills:
+        skill_progress[skill] = 70  # Simulated percentage
+
+    for skill, percent in skill_progress.items():
+        st.write(f"**{skill}**")
+        st.progress(percent)
