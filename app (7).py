@@ -1,8 +1,5 @@
 import streamlit as st
 
-# Page config (must be first Streamlit call)
-st.set_page_config(page_title="SkillWise NextGen Recommender", layout="wide")
-
 # Banner image
 st.image("banner.png", use_column_width=True)
 
