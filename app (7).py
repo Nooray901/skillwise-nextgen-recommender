@@ -1,5 +1,6 @@
 
 import streamlit as st
+st.image("logo.png", width=120)  # Adjust width as needed
 
 st.set_page_config(page_title="SkillWise NextGen Recommender", layout="wide")
 
@@ -49,3 +50,8 @@ if selected_course:
     for skill, percent in skill_progress.items():
         st.write(f"**{skill}**")
         st.progress(percent)
+st.markdown("---")
+st. markdown(
+    "<p style='text-align: center; font-size: 12px;'>Powered by <b>SkillWise</b> | Smart Learning Recommender</p>",
+    unsafe_allow_html=True
+)
